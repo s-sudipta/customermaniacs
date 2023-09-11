@@ -1,0 +1,112 @@
+ .img {
+    width: 80%;
+    border-radius: 5px;
+    position: relative;
+    height: auto;
+    position: relative;
+    margin: auto;
+  
+  }
+  
+  .textR {
+    margin-left: 50px;
+  }
+  @media only screen and (max-width: 600px) {
+  .textR{
+    margin-left: 0;
+  }
+}
+.textL {
+  margin-right: 50px;
+}
+@media only screen and (max-width: 600px) {
+.textL{
+  margin-right: 0;
+}
+}
+
+  
+  .heading {
+    font-family: "Fairplay",Fallback,sans-serif;
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    .heading,.subHeading{
+      text-align: center;
+    }
+    .imageContainer{
+      text-align: center;
+      margin-bottom: 10%;
+    }
+    .img {
+      width: 90%;
+    }
+    }
+  .paragraph {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .content {
+    overflow: hidden;
+    max-height: 500px;
+    transition: max-height 0.3s ease-in-out;
+  }
+  
+  .expanded {
+    height: auto;
+    max-height: fit-content;
+    animation: 0.5s ease-in-out 0s 1 slideDown;
+  }
+  .transbg{
+    background: linear-gradient( to bottom,  rgba(255, 255, 255, 0) 0%, var(--back-gd-color) 100%);
+    height: 200px;
+    position: relative;
+    top:-200px;
+    animation: 0.75s ease-in-out 0s 1 slideInFromBottom;
+  }
+  @keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .notransbg{
+    background: transparent;
+    height:100px;
+    position: relative;
+    top: -50px;
+    
+  }
+  @keyframes slideDown{
+    0% {  max-height: 500px; transform: translateY(-10%); }   
+    100% { max-height: fit-content; transform: translateY(0); }
+  }
+  .button {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: transparent;
+    color: var(--text-color);
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%,0);
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+    color: var(--main-theme-color);
+  }
+  .subHeading{
+    text-align: center;
+  }

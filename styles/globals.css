@@ -1,0 +1,110 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+@font-face {
+  font-family: 'Hamish';
+  src: url('/static/media/Hamish.woff') format('woff'),
+       url('/static/media/Hamish.otf') format("opentype");
+}
+@font-face {
+  font-family: 'Canobis';
+  src: url('/static/media/Canobis.otf') format("opentype");
+}
+@font-face{
+  font-family: 'BBfont';
+  src: url('/static/media/BBfont.ttf') format("truetype");
+}
+@font-face{
+  font-family: 'Fairplay';
+  src: url('/static/media/fairplay.ttf') format("truetype");
+}
+/* Firefox */
+:root{
+  --main-theme-color: #0067A5;
+  --sub-theme-color: #002d39;
+  --light-type-color: #b7b7b7;
+  --text-color: #1a1616 !important;
+  --back-gd-color:#dadadc !important;
+  --second-bg-color: #5996aeb7 !important;
+}
+/* .light-mode{
+  --text-color: #212529 !important;
+  --back-gd-color:#dadadc !important;
+  --second-bg-color: #9a9d9ecf !important;
+} */
+.dark-mode{
+  --text-color: #cdcdcd !important;
+  --back-gd-color:#222220 !important;
+  --second-bg-color:#1f2522 !important;
+}
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--main-theme-color) var(--light-type-color);
+  user-select: none;
+}
+input{
+  user-select: auto !important;
+}
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 8px;
+}
+*::-webkit-scrollbar-track {
+    background: var(--light-type-color);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--main-theme-color);
+    border-radius: 0px;
+}
+a {
+  color: var(--light-type-color);
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: ease-in-out 0.25s;
+}
+a:hover, a:active{
+  color: white;
+  font-weight:lighter;
+}
+* {
+  box-sizing: border-box;
+}
+
+#sub-heading{
+  font-family: 'Hamish', Fallback, sans-serif;
+  color: var(--text-color);
+  font-size: calc(1vw + 3vh);
+  -webkit-text-decoration: var(--main-theme-color) underline;
+  text-decoration: var(--main-theme-color) underline;
+   -webkit-text-decoration-skip: ink;
+  text-decoration-thickness: 5px ;
+  text-underline-offset: 12px;
+  margin-bottom: 36px;
+  text-decoration-skip-ink: auto;
+  -webkit-text-underline-position: auto;
+  text-underline-position: auto;
+}
+
+.main{
+ min-height:100vh;
+overflow-x: hidden;
+
+animation: 1s ease-in-out 0s 1 fadeIn;
+}
+body{
+  background-color: var(--back-gd-color) !important;
+}
+@keyframes fadeIn{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+.m-top{
+  margin-top:60px;
+}
+.custom-alert{
+  background-color: var(--back-gd-color);
+}

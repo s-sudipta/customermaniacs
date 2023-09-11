@@ -1,0 +1,41 @@
+.container {
+    padding: 50px;
+  }
+  
+  .heading {
+    margin: 30px 0px;
+    text-align: center;
+    color:var(--text-color)
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    text-align: center;
+    color:var(--text-color)
+  }
+  
+  .member {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .member h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:var(--text-color)
+  }
+  
+  .member p {
+    font-size: 1.2rem;
+    color:var(--main-theme-color)
+  }
+  
